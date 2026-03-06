@@ -1,0 +1,216 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ButtonChatGPT from "../components/buttons/button-chatgpt.astro";
+import ButtonSocialMedia from "../components/buttons/button-social-media.astro";
+import Card from "../components/buttons/card.astro";
+import {
+  PaperClip,
+  Img,
+  Globe,
+  Book,
+  TextCursor,
+  Youtube,
+  Twitch,
+  Twitter,
+  Instagram,
+  Discord,
+  TikTok,
+  Whatsapp,
+  Hearts,
+  Diamonds,
+  Clubs,
+  Spades,
+} from "../components/icons/index.js";
+import backgroundImage from "../assets/background-image.webp";
+import profileImage from "../assets/rickyedit-profile.webp";
+---
+
+<BaseLayout title="rickyedit">
+  <div
+    class="fixed inset-0 -z-20 w-full overflow-hidden"
+    style="height: 110vh; height: 110svh;"
+  >
+    <div
+      class="absolute inset-0 scale-140 bg-cover bg-center bg-no-repeat opacity-100 blur-sm will-change-transform"
+      style={`background-image: url(${backgroundImage.src}); background-attachment: scroll;`}
+    >
+    </div>
+    <div
+      class="absolute top-[-10%] left-[-10%] h-150 w-150 animate-pulse rounded-full bg-pink-600/90 blur-[120px]"
+    >
+    </div>
+  </div>
+  <section>
+    <div
+      class="mx-auto h-13 w-70 cursor-pointer rounded-2xl bg-amber-50/30 transition-all duration-300 hover:scale-80 sm:h-20 sm:w-100"
+    >
+      <h1
+        class="mt-20 w-full text-center font-sans text-4xl font-extrabold text-white sm:text-6xl"
+      >
+        rickyedit 👓
+      </h1>
+    </div>
+    <Image
+      id="header-logo"
+      loading="eager"
+      fetchpriority="high"
+      decoding="sync"
+      alt="Profile Image"
+      src={profileImage}
+      width={860}
+      height={860}
+      class="relative top-35 left-1/2 -translate-x-1/2 cursor-pointer rounded-xl transition-all duration-300 hover:scale-105"
+    />
+    <div
+      class="mx-auto mt-70 flex h-40 w-85 rounded-2xl bg-[#565656] p-2 md:h-34 md:w-170 lg:w-210"
+    >
+      <div class="flex flex-col">
+        <span
+          class="flex flex-row gap-2 px-2 py-4 font-sans text-[8px] text-[#afafaf] md:p-4 md:text-sm lg:text-base"
+        >
+          define a rickyedit con una frase:
+          <TextCursor />
+        </span>
+        <span
+          class="px-2 py-1 font-sans text-[8px] text-[#afafaf] md:pl-4 md:text-xs lg:text-base"
+        >
+          "quiéreme o equivócate, a mí me da igual."
+        </span>
+      </div>
+      <div class="flex flex-row gap-3">
+        <ButtonChatGPT label="Adjuntar" Icon={PaperClip} />
+        <ButtonChatGPT label="Buscar" Icon={Globe} />
+        <ButtonChatGPT label="Estudiemos" Icon={Book} />
+        <ButtonChatGPT label="Crear imagen" Icon={Img} notshow="hidden" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2
+        class="mt-20 text-center font-sans text-4xl font-extrabold text-white sm:text-6xl"
+      >
+        vídeo más reciente
+      </h2>
+      <div class="flex justify-center">
+        <span
+          class="text-center font-sans text-[12px] font-extrabold text-white sm:text-xl"
+          >se actualiza aproximadamente a la hora de subir el vídeo</span
+        >
+      </div>
+      <div
+        class="mx-auto mt-15 aspect-video w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
+      >
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed?listType=user_uploads&list=RickyEdit"
+          title="Reproductor de video de YouTube"
+          loading="lazy"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2
+      class="mt-22 text-center font-sans text-4xl font-extrabold text-white sm:text-6xl"
+    >
+      encuéntrame en...
+    </h2>
+    <div class="mx-5 mt-20 flex flex-row gap-8 sm:gap-20 md:mt-40">
+      <ButtonSocialMedia
+        label="youtube"
+        url="https://www.youtube.com/@rickyedit"
+        Icon={Youtube}
+      />
+      <ButtonSocialMedia
+        label="twitch"
+        url="https://www.twitch.tv/rickyedit"
+        Icon={Twitch}
+        color="bg-purple-500"
+        text="text-white"
+      />
+      <ButtonSocialMedia
+        label="twitter"
+        url="https://twitter.com/rickyedit"
+        Icon={Twitter}
+        color="bg-[#15202B]"
+        text="text-white"
+      />
+    </div>
+    <div class="mx-15 mt-15 flex flex-row gap-8 sm:gap-20 lg:mx-65 xl:mx-100">
+      <ButtonSocialMedia
+        label="discord"
+        url="https://discord.com/invite/rickyedit"
+        Icon={Discord}
+        color="bg-indigo-500"
+        text="text-white"
+      />
+      <ButtonSocialMedia
+        label="instagram"
+        url="https://www.instagram.com/rickyedit/"
+        Icon={Instagram}
+        color="bg-[#FCAF45]"
+        text="text-white"
+      />
+    </div>
+
+    <div class="mx-15 mt-15 flex flex-row gap-8 sm:gap-20 lg:mx-65 xl:mx-100">
+      <ButtonSocialMedia
+        label="whatsapp"
+        url="https://whatsapp.com/channel/0029Va9VWA8IyPtaf9sl183T"
+        Icon={Whatsapp}
+        color="bg-green-400"
+        text="text-white"
+      />
+      <ButtonSocialMedia
+        label="tiktok"
+        url="https://www.tiktok.com/@rickyedit"
+        Icon={TikTok}
+        color="bg-black"
+        text="text-white"
+      />
+    </div>
+    <iframe
+      data-testid="embed-iframe"
+      style="border-radius:12px; margin-top: 5rem;"
+      src="https://open.spotify.com/embed/track/3SjWj1jkonJqEkwrkCggkV?utm_source=generator"
+      width="100%"
+      height="352"
+      title="Reproductor de música de Spotify"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"></iframe>
+  </section>
+  <section>
+    <h2
+      class="mt-12 text-center font-sans text-4xl font-extrabold text-white sm:mt-22 sm:text-6xl"
+    >
+      ey no te vayas sin elegir una carta
+    </h2>
+    <div
+      class="relative mx-auto my-auto mt-25 mb-20 flex w-full max-w-73 flex-row sm:mt-45 sm:max-w-130 lg:max-w-3xl lg:gap-5 xl:max-w-290"
+    >
+      <Card
+        label="fan de locas de twitter (pobre=no puedes opinar, vives en Andorra)"
+        Icon={Hearts}
+        rotate="-rotate-22"
+      />
+      <Card
+        label="fan de fnaf (técnicamente es withered foxy)"
+        Icon={Diamonds}
+        rotate="-rotate-10"
+      />
+      <Card
+        label="fan del si te ríes pierdes (mira sus compartidos)"
+        Icon={Clubs}
+        rotate="rotate-10"
+      />
+      <Card
+        label="fan de los debates (cállate, shush)"
+        Icon={Spades}
+        rotate="rotate-22"
+      />
+    </div>
+  </section>
+</BaseLayout>

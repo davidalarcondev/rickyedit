@@ -1,0 +1,118 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<html lang="es" class="min-h-dvh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#2D1B2D" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="keywords" content="rickyedit RickyEdit Rickyedit" />
+    <meta name="author" content="rickyedit" />
+    <meta name="title" content="rickyedit" />
+    <meta
+      name="description"
+      content="quiéreme o equivócate, a mí me da igual."
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/Onest-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="../assets/rickyedit-profile.webp"
+      fetchpriority="high"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon 32 x 32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon 16 x 16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="../apple-touch-icon-1024x1024.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="../apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../apple-touch-icon-120x120.png"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="rickyedit" />
+    <meta
+      property="twitter:description"
+      content="Mi web con los enlaces a mis redes sociales y plataformas de creación de contenido."
+    />
+    <meta property="twitter:image" content="https://rickyedit.pages.dev/rickyedit-profile.webp" />
+    <meta name="twitter:site" content="@rickyedit" />
+    <meta name="twitter:creator" content="@rickyedit" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="rickyedit" />
+    <meta
+      property="og:description"
+      content="Mi web con los enlaces a mis redes sociales y plataformas de creación de contenido."
+    />
+    <meta property="og:image" content="https://rickyedit.pages.dev/rickyedit-profile.webp" />
+
+    <title>{title}</title>
+
+    <style is:global>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
