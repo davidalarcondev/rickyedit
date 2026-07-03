@@ -1,0 +1,16 @@
+export { default as PaperClip } from "./paperclip.astro";
+export { default as Img } from "./img.astro";
+export { default as Globe } from "./globe.astro";
+export { default as Book } from "./book.astro";
+export { default as TextCursor } from "./text-cursor.astro";
+export { default as Youtube } from "./youtube.astro";
+export { default as Twitch } from "./twitch.astro";
+export { default as Twitter } from "./twitter.astro";
+export { default as Instagram } from "./instagram.astro";
+export { default as Discord } from "./discord.astro";
+export { default as TikTok } from "./tiktok.astro";
+export { default as Whatsapp } from "./whatsapp.astro";
+export { default as Diamonds } from "./diamonds.astro";
+export { default as Spades } from "./spades.astro";
+export { default as Clubs } from "./clubs.astro";
+export { default as Hearts } from "./heart.astro";
