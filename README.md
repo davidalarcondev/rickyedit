@@ -1,15 +1,15 @@
 <div align="center">
 
-# rickyedit — sitio web personal
+# rickyedit — sitio web personal (no oficial)
 
 ![Astro](https://img.shields.io/badge/astro-%232C2231.svg?style=for-the-badge&logo=astro&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-Web personal del creador de contenido **RickyEdit**. Hecha con Astro + Tailwind CSS v4.
+Web personal **no oficial** del creador de contenido **RickyEdit**. Hecha con Astro + Tailwind CSS v4.
 
 <a href="https://rickyedit.pages.dev/">
-  <img src="https://img.shields.io/badge/☁_VIEW_LIVE_SITE-FF7043?style=for-the-badge&logoColor=white" alt="Live Demo" />
+  <img src="https://img.shields.io/badge/☁_VER_SITIO_EN_VIVO-FF7043?style=for-the-badge&logoColor=white" alt="Demo en vivo" />
 </a>
 
 </div>
@@ -24,15 +24,15 @@ Web personal del creador de contenido **RickyEdit**. Hecha con Astro + Tailwind 
 - **Spotify** — Reproductor embed de música.
 - **Elige una carta** — Mini-juego interactivo de selección de cartas.
 
-## Stack
+## Stack tecnológico
 
 | Capa | Tecnología |
 |------|-----------|
 | Framework | Astro 5 |
 | Estilos | Tailwind CSS 4 |
 | Fuente | Onest Variable |
-| Package manager | pnpm |
-| Host | Cloudflare Pages |
+| Gestor de paquetes | pnpm |
+| Alojamiento | Cloudflare Pages |
 
 ## Seguridad
 
@@ -60,4 +60,4 @@ pnpm preview   # previsualizar build
 ```
 
 ---
-Hecho con ❤️ por y para la comunidad de rickyedit.
+Hecho con ❤️ por y para la comunidad de rickyedit. Este es un sitio **no oficial**.
