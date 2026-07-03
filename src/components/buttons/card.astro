@@ -1,0 +1,34 @@
+---
+const { Icon, label, rotate } = Astro.props;
+---
+
+<div
+  class={`option group h-30 w-18 ${rotate} cursor-pointer rounded-2xl bg-white transition-all duration-300 hover:scale-110 sm:h-60 sm:w-40 lg:h-80 lg:w-50 xl:h-110 xl:w-70`}
+>
+  <span
+    class="text absolute top-10 text-center font-sans text-[8px] font-extrabold uppercase opacity-0 sm:top-30 sm:text-[10px] lg:top-30 lg:text-base xl:top-45 xl:text-2xl"
+  >
+    {label}
+  </span>
+  <Icon />
+</div>
+
+<script>
+  const options = document.querySelectorAll(".option");
+
+  options.forEach((el) => {
+    el.addEventListener("click", () => {
+      options.forEach((other) => {
+        if (other !== el) {
+          other.classList.add("pointer-events-none", "opacity-20", "grayscale");
+        } else {
+          el.classList.add("ring-4", "ring-red-500", "scale-110");
+          const text = el.querySelectorAll(".text");
+          text.forEach((t) => {
+            t.classList.add("opacity-100");
+          });
+        }
+      });
+    });
+  });
+</script>
