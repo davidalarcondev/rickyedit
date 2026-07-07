@@ -1,27 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ButtonChatGPT from "../components/buttons/button-chatgpt.astro";
+import IconButton from "../components/buttons/icon-button.astro";
 import ButtonSocialMedia from "../components/buttons/button-social-media.astro";
 import Card from "../components/buttons/card.astro";
-import {
-  PaperClip,
-  Img,
-  Globe,
-  Book,
-  TextCursor,
-  Youtube,
-  Twitch,
-  Twitter,
-  Instagram,
-  Discord,
-  TikTok,
-  Whatsapp,
-  Hearts,
-  Diamonds,
-  Clubs,
-  Spades,
-} from "../components/icons/index.js";
 import backgroundImage from "../assets/background-image.webp";
 import profileImage from "../assets/rickyedit-profile.webp";
 ---
@@ -122,10 +104,10 @@ import profileImage from "../assets/rickyedit-profile.webp";
       </div>
 
       <div class="flex flex-row flex-wrap justify-center gap-3 p-2">
-        <ButtonChatGPT label="Adjuntar" Icon={PaperClip} />
-        <ButtonChatGPT label="Buscar" Icon={Globe} />
-        <ButtonChatGPT label="Estudiemos" Icon={Book} />
-        <ButtonChatGPT label="Crear imagen" Icon={Img} />
+        <IconButton label="Adjuntar" iconName="paperclip" />
+        <IconButton label="Buscar" iconName="globe" />
+        <IconButton label="Estudiemos" iconName="book" />
+        <IconButton label="Crear imagen" iconName="img" />
       </div>
     </div>
   </section>
@@ -248,19 +230,19 @@ import profileImage from "../assets/rickyedit-profile.webp";
       <ButtonSocialMedia
         label="youtube"
         url="https://www.youtube.com/@rickyedit"
-        Icon={Youtube}
+        iconName="youtube"
       />
       <ButtonSocialMedia
         label="twitch"
         url="https://www.twitch.tv/rickyedit"
-        Icon={Twitch}
+        iconName="twitch"
         color="bg-purple-500"
         text="text-white"
       />
       <ButtonSocialMedia
         label="twitter"
         url="https://twitter.com/rickyedit"
-        Icon={Twitter}
+        iconName="twitter"
         color="bg-[#15202B]"
         text="text-white"
       />
@@ -269,14 +251,14 @@ import profileImage from "../assets/rickyedit-profile.webp";
       <ButtonSocialMedia
         label="discord"
         url="https://discord.com/invite/rickyedit"
-        Icon={Discord}
+        iconName="discord"
         color="bg-indigo-500"
         text="text-white"
       />
       <ButtonSocialMedia
         label="instagram"
         url="https://www.instagram.com/rickyedit/"
-        Icon={Instagram}
+        iconName="instagram"
         color="bg-[#FCAF45]"
         text="text-white"
       />
@@ -286,14 +268,14 @@ import profileImage from "../assets/rickyedit-profile.webp";
       <ButtonSocialMedia
         label="whatsapp"
         url="https://whatsapp.com/channel/0029Va9VWA8IyPtaf9sl183T"
-        Icon={Whatsapp}
+        iconName="whatsapp"
         color="bg-green-400"
         text="text-white"
       />
       <ButtonSocialMedia
         label="tiktok"
         url="https://www.tiktok.com/@rickyedit"
-        Icon={TikTok}
+        iconName="tiktok"
         color="bg-black"
         text="text-white"
       />
@@ -324,22 +306,22 @@ import profileImage from "../assets/rickyedit-profile.webp";
     >
       <Card
         label="fan de locas de twitter (pobre=no puedes opinar, vives en Andorra)"
-        Icon={Hearts}
+        iconName="heart"
         rotate="-rotate-22"
       />
       <Card
         label="fan de fnaf (técnicamente es withered foxy)"
-        Icon={Diamonds}
+        iconName="diamonds"
         rotate="-rotate-10"
       />
       <Card
         label="fan del si te ríes pierdes (mira sus compartidos)"
-        Icon={Clubs}
+        iconName="clubs"
         rotate="rotate-10"
       />
       <Card
         label="fan de los debates (cállate, shush)"
-        Icon={Spades}
+        iconName="spades"
         rotate="rotate-22"
       />
     </div>
