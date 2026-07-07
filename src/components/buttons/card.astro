@@ -1,5 +1,6 @@
 ---
-const { Icon, label, rotate } = Astro.props;
+import Icon from "../icons.astro";
+const { iconName, label, rotate } = Astro.props;
 ---
 
 <div
@@ -10,7 +11,7 @@ const { Icon, label, rotate } = Astro.props;
   >
     {label}
   </span>
-  <Icon />
+  <Icon name={iconName} />
 </div>
 
 <script>

@@ -1,5 +1,6 @@
 ---
-const { Icon, label } = Astro.props;
+import Icon from "../icons.astro";
+const { iconName, label } = Astro.props;
 ---
 
 <button
@@ -8,7 +9,7 @@ const { Icon, label } = Astro.props;
   type="button"
 >
   <div class="aspect-square w-3 lg:w-5">
-    <Icon class="h-full w-full" />
+    <Icon name={iconName} class="h-full w-full" />
   </div>
   <span class="font-sans text-[10px] text-white md:text-xs lg:text-sm">
     {label}
